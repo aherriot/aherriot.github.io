@@ -1,0 +1,52 @@
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="description">Work experience and projects of <strong>Andrew Herriot</strong></div>
+
+  <nav>
+    <a
+      class="{% if page.url == '/' %} active{% endif %}"
+      href="{{ site.baseurl }}/">
+      Home
+    </a>
+
+    <h2>Work Experience</h2>
+
+    {% assign ordered_work = site.work | sort: 'order' %}
+    {% for job in ordered_work %}
+      <a
+        class="{% if page.url == job.url %} active{% endif %}"
+        href="{{ job.url }}">
+        {{ job.title }}
+      </a>
+    {% endfor %}
+
+    <h2>Education</h2>
+    <a
+      class="{% if page.url == '/uvic/' %} active{% endif %}"
+      href="/uvic">
+      University of Victoria
+    </a>
+
+    <h2>Projects</h2>
+    {% assign ordered_projects = site.projects | sort: 'order' %}
+    {% for project in ordered_projects %}
+      <a
+        class="{% if page.url == project.url %} active{% endif %}"
+        href="{{ project.url }}">
+        {{ project.title }}
+      </a>
+    {% endfor %}
+
+    <h2>Volunteer</h2>
+    {% assign ordered_volunteer = site.volunteer | sort: 'order' %}
+    {% for exp in ordered_volunteer %}
+      <a
+        class="{% if page.url == exp.url %} active{% endif %}"
+        href="{{ exp.url }}">
+        {{ exp.title }}
+      </a>
+    {% endfor %}
+  </nav>
+</div>
