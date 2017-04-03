@@ -15,7 +15,6 @@ header {
   position: fixed;
   top: 0px;
   width: 100%;
-  color: #222;
   background-color: white;
   border-bottom: 1px solid #ccc;
   height: 3.0rem;
@@ -119,6 +118,11 @@ article blockquote {
    -webkit-transform: translateX(14rem);
        -ms-transform: translateX(14rem);
            transform: translateX(14rem);
+ }
+
+ header h1 {
+   font-size: 1.0rem;
+   margin-top: 1.0rem;
  }
 }
 
