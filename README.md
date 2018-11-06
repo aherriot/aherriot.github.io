@@ -1,3 +1,5 @@
 # aherriot.github.io
 
-portfolio web site for Andrew Herriot!
+Portfolio web site for Andrew Herriot
+
+bundle exec jekyll serve
