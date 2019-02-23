@@ -1,5 +1,2 @@
-# aherriot.github.io
-
-Portfolio web site for Andrew Herriot
-
-bundle exec jekyll serve
+# test-site
+test new portfolio

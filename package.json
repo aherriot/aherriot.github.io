@@ -1,0 +1,22 @@
+{
+  "name": "test-site",
+  "version": "1.0.0",
+  "description": "portfolio",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aherriot/test-site.git"
+  },
+  "author": "Andrew Herriot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aherriot/test-site/issues"
+  },
+  "homepage": "https://www.aherriot.com/test-site",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}
