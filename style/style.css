@@ -1,7 +1,11 @@
-html,
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html,
+body {
   height: 100%;
 }
 
@@ -52,6 +56,10 @@ article h4 {
   color: #2e7d32;
 }
 
+article h3 {
+  margin-bottom: 1.0rem;
+}
+
 article {
   margin-top: 48px;
   padding-top: 10px;
@@ -77,9 +85,14 @@ article ol {
 
 article img {
   display: block;
+  width: 100%;
   max-width: 100%;
   height: auto;
-  margin: auto;
+  margin: 0 auto;
+  /* padding: 0.4rem; */
+  border-radius: 0.4rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  /* border: 0.2rem solid rgba(0, 0, 0, 0.2); */
 }
 
 article figcaption {
@@ -295,7 +308,7 @@ article blockquote {
   );
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 39.99rem) {
   #sidebar {
     position: fixed;
     top: 3rem;

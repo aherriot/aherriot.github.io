@@ -1,7 +1,7 @@
 ---
 title: Game Jam
 layout: default
-order: 5
+order: 6
 ---
 
 Catapult is a game that I created using GameMaker for a contest at UVic. I was the first runner up out of thirteen teams, making an artillery shooting game with deformable terrain. While the interface to the game was its downfall, I am still very proud of the technical achievement I was able to do in GameMaker.

@@ -1,7 +1,7 @@
 ---
 title: LOUD Technologies
 layout: default
-order: 3
+order: 4
 ---
 
 ### June 2012 to August 2013

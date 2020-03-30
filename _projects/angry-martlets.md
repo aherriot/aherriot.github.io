@@ -1,7 +1,7 @@
 ---
 title: Angry Martlets
 layout: default
-order: 4
+order: 5
 ---
 
 In the Summer of 2011, I did a directed studies under the supervision of Dr. Yvonne Coady, to explore topics in object-oriented design, physics, and C++ programming. Over the summer, I created a small video game called "Angry Martlets" which is a clone of Angry Birds. What is a martlet? It is a mythical bird that does not have feet and it is a symbol of the University of Victoria.
