@@ -4,6 +4,8 @@ layout: default
 order: 1
 ---
 
+[chipadvisor.aherriot.com](https://chipadvisor.aherriot.com)
+
 As a joke, I made a fully functioning parody of Tripadvisor for tourists to review potato chips using React, Node/Express, and Postgres.
 
 ![Chipadvisor list](/static/chipadvisor1.png)

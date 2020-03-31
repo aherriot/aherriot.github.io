@@ -6,9 +6,9 @@ order: 4
 
 ### June 2012 to August 2013
 
-Previously, I worked for LOUD Technologies, a concert speaker company, and I worked on software used to control speakers called EAW Resolution. The software was a combination of a venue modeling tool with speaker configuration and control. I worked in a team of three people doing a bit of everything, from front end GUI (Using Qt and OpenGl) to multi-threaded network programming and data simulation and modeling.
+Previously, I worked for LOUD Technologies, a concert speaker company, on software used to control speakers called EAW Resolution. The software was a combination of a venue CAD modeling tool with speaker configuration and control. I worked in a team of three people doing a bit of everything, from front end GUI (Using Qt and OpenGl) to multi-threaded network programming and data simulation and modeling.
 
-It is difficult to show the work that I did in screenshots for the simulation and multi-threaded networking, but at least you can get a sense of the front end work that I did and the scope of the software. The first screenshot shows UVic Farquhar Auditorium modeled in the software. In the centre, you can see 6 speakers hung the software calculates the optimal position and setup for this hang position and shows the decibel level for the seating in the concert.
+It is difficult to show the work that I did in screenshots for the simulation and multi-threaded networking, but at least you can get a sense of the front end work that I did and the scope of the software. The first screenshot shows UVic Farquhar Auditorium modeled in the software. In the centre, you can see 6 speakers hung the software calculates the optimal position and setup for this hang position and shows the decibel level heatmap for the seating in the concert.
 
 ![EAW Resolution Screenshot 1](/static/loud-screenshot1.png){:class="screenshot"}
 
