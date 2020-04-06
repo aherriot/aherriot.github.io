@@ -4,9 +4,13 @@ layout: default
 order: 2
 ---
 
+[persianflashcards.com](https://www.persianflashcards.com/)
+
 A curated flashcard app for Persian language learners using React, Redux, Express, and MongoDB.
 
 This app uses a curated list of Persian words and phrases that are managed by me, but it allows other users to study the shared set of flashcards and track their progress independently.
+
+![Persian Flashcards Screenshot](/static/persian01.png)
 
 I made this project for three reasons:
 

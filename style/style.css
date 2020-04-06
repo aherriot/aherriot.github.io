@@ -15,14 +15,6 @@ html {
   line-height: 1.5;
 }
 
-article {
-  /* background: radial-gradient(
-    farthest-corner,
-    rgba(63, 176, 130, 0.5),
-    transparent
-  ); */
-}
-
 header {
   position: fixed;
   top: 0px;
@@ -83,24 +75,14 @@ article ol {
   color: #555;
 }
 
-article img {
+article p > img {
   display: block;
   width: 100%;
   max-width: 100%;
   height: auto;
   margin: 0 auto;
-  /* padding: 0.4rem; */
   border-radius: 0.4rem;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
-  /* border: 0.2rem solid rgba(0, 0, 0, 0.2); */
-}
-
-article figcaption {
-  margin-top: 0.5rem;
-  text-align: center;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: rgba(0, 0, 0, 0.7);
 }
 
 article a,
@@ -109,18 +91,50 @@ article a:visited {
   color: #2e7d32;
 }
 
-article a:hover {
-  font-weight: bold;
-}
-
+article a:hover,
 article a.active {
   color: #2e7d32;
+  text-shadow: -0.01rem 0 rgba(0, 0, 0, 0.4), 0.01rem 0 rgba(0, 0, 0, 0.4);
 }
 
 article blockquote {
   margin: 0;
   padding: 0 1.5rem 0 1.5rem;
   border-left: 3px solid #2e7d32;
+}
+
+article pre.highlight {
+  font-size: 0.9rem;
+  padding: 1rem;
+  background-color: #f4f4f4;
+  overflow-x: scroll;
+}
+
+article .tiles {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+article figure.preview-tile {
+  border-radius: 0.4rem;
+  width: 17.0rem;
+  margin: 0.7rem;
+  flex-shrink: 0;
+}
+
+article figure.preview-tile img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  border-radius: 0.4rem;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+article figure.preview-tile figcaption {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 0.9rem;
 }
 
 #sidebar {
@@ -170,7 +184,7 @@ article blockquote {
 #sidebar nav a:hover,
 #sidebar nav a:focus {
   text-decoration: none;
-  font-weight: bold;
+  text-shadow: -0.01rem 0 rgba(0, 0, 0, 0.4), 0.01rem 0 rgba(0, 0, 0, 0.4);
   color: #2e7d32;
   background-color: #eee;
   border-color: transparent;
