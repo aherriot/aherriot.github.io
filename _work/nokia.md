@@ -4,7 +4,7 @@ layout: default
 order: 2
 ---
 
-### March 2015 to Apil 2019
+### 2015 to 2019
 
 I worked as a senior web application developer for Nokia where I led the web technology modernization efforts for the IP/Optical Networking department. When I joined Nokia, the company was using an outdated web application framework. It required a web browser to download 10MB of JavaScript just to draw a table. It was slow, time-consuming to develop with, and full of bugs. Over the course of several months, I convinced the organization to change using a series of proof-of-concepts and PowerPoint presentations. Today, we have over 80 developers using the foundation that I put in place.
 
@@ -31,4 +31,3 @@ My day to day responsibilities include being the project lead for web applicatio
 Here is a video highlight some of the projects I was working on.
 
 <iframe width="100%" height="300" src="https://www.youtube.com/embed/7a5_0_u3jIc" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
-

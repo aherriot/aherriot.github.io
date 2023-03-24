@@ -1,8 +1,8 @@
-name: Andrew Herriot's portfolio
+title: Andrew Herriot's portfolio
 description: A portfolio of work experience and projects by Andrew Herriot
 author: Andrew Herriot
 
-? baseurl
+baseurl:
 url: www.aherriot.com
 port: 3000
 

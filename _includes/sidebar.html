@@ -1,24 +1,30 @@
 <!-- Toggleable sidebar -->
 <div id="sidebar">
-  <div class="description">Work experience and projects of
+  <div class="description">
+    Work experience and projects of
     <strong>Andrew Herriot</strong>
   </div>
 
   <nav>
-    <a class="{% if page.url == '/' %}active{% endif %}" href="{{ site.baseurl }}/">
+    <a
+      class="{% if page.url == '/' %}active{% endif %}"
+      href="{{ site.baseurl }}/"
+    >
       Home
     </a>
-    <a href="https://github.com/aherriot/" target="_blank">
-      GitHub Account
-    </a>
-    <a href="https://www.linkedin.com/in/andrew-herriot-aa3a9553/" target="_blank">
+    <a href="https://github.com/aherriot/" target="_blank"> GitHub Account </a>
+    <a href="https://www.linkedin.com/in/aherriot" target="_blank">
       LinkedIn Profile
     </a>
 
     <h2>Work Experience</h2>
 
-    {% assign ordered_work = site.work | sort: 'order' %} {% for job in ordered_work %}
-    <a class="{% if page.url == job.url %}active{% endif %}" href="{{ job.url }}">
+    {% assign ordered_work = site.work | sort: 'order' %} {% for job in
+    ordered_work %}
+    <a
+      class="{% if page.url == job.url %}active{% endif %}"
+      href="{{ job.url }}"
+    >
       {{ job.title }}
     </a>
     {% endfor %}
@@ -29,15 +35,23 @@
     </a>
 
     <h2>Projects</h2>
-    {% assign ordered_projects = site.projects | sort: 'order' %} {% for project in ordered_projects %}
-    <a class="{% if page.url == project.url %}active{% endif %}" href="{{ project.url }}">
+    {% assign ordered_projects = site.projects | sort: 'order' %} {% for project
+    in ordered_projects %}
+    <a
+      class="{% if page.url == project.url %}active{% endif %}"
+      href="{{ project.url }}"
+    >
       {{ project.title }}
     </a>
     {% endfor %}
 
     <h2>Volunteering</h2>
-    {% assign ordered_volunteering = site.volunteering | sort: 'order' %} {% for exp in ordered_volunteering %}
-    <a class="{% if page.url == exp.url %}active{% endif %}" href="{{ exp.url }}">
+    {% assign ordered_volunteering = site.volunteering | sort: 'order' %} {% for
+    exp in ordered_volunteering %}
+    <a
+      class="{% if page.url == exp.url %}active{% endif %}"
+      href="{{ exp.url }}"
+    >
       {{ exp.title }}
     </a>
     {% endfor %}

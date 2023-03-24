@@ -4,7 +4,7 @@ layout: default
 order: 4
 ---
 
-### June 2012 to August 2013
+### 2012 to 2013
 
 Previously, I worked for LOUD Technologies, a concert speaker company, on software used to control speakers called EAW Resolution. The software was a combination of a venue CAD modeling tool with speaker configuration and control. I worked in a team of three people doing a bit of everything, from front end GUI (Using Qt and OpenGl) to multi-threaded network programming and data simulation and modeling.
 
