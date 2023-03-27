@@ -1,7 +1,7 @@
 ---
 title: Chipadvisor
 layout: default
-order: 1
+order: 3
 ---
 
 [chipadvisor.aherriot.com](https://chipadvisor.aherriot.com)
@@ -15,6 +15,7 @@ As you can see from the screenshots, this web app allows users to add and review
 ![Chipadvisor Reviews](/static/chipadvisor2.png)
 
 ### links
+
 [chipadvisor.aherriot.com](https://chipadvisor.aherriot.com)
 
 [github.com/aherriot/chipadvisor](https://github.com/aherriot/chipadvisor)

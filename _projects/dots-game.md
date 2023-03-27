@@ -1,7 +1,7 @@
 ---
 title: Minimax Algorithm
 layout: default
-order: 4
+order: 6
 ---
 
 ## AI for the dots, lines, and squares game.
@@ -106,4 +106,5 @@ there was no way to prevent this outcome.
 ```
 
 ### Links
+
 [github.com/aherriot/dots-game](https://github.com/aherriot/dots-game)
