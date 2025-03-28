@@ -32,7 +32,7 @@ I also implemented a full stack feature that would query for eligible discount c
 
 Prices for TripAdvisor restaurant products are adjusted daily to reflect the value that they may offer to the customer. Key Accounts Salespeople needed a way to fix a price for a product so that they could negotiate deals with large customers. I create a mechanism so that salespeople could add locations and fixed prices to. I modified the downstream ETL jobs to ingest this spreadsheet and use the data to set a fixed price instead of the normal calculation.
 
-### Quotes from Performance Review
+### Quotes from Performance Reviews
 
 > "Andrew is strongest working on the front end in React. He came to Tripadvisor as the resident expert at his previous company and it shows. He is very comfortable solving complex problems within the front end and writing elegant fixes that fully utilize the React library..."
 
