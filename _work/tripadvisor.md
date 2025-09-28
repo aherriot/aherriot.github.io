@@ -12,25 +12,27 @@ I work with React, GraphQL, Java, and PostgreSQL to create responsive web applic
 
 ## Projects
 
-There was a pre-existing video feature where owners can publish a slideshow of their restaurant but it was only visible on the restaurant review page. I exposed this on the restaurant search results pages, which receives the highest volume of traffic on the Tripadvisor website. I had to create a solution to expose this information that would scale to tens of millions of requests. That meant querying this data efficiently with cacheing in the right places. As a full stack developer, I also wrote the CSS and HTML to work across every browser (including IE) and platform and setup tracking metrics for feature evaluation.
+There was a pre-existing video feature where owners can publish a slideshow of their restaurant but it was only visible on the restaurant review page. I exposed this on the restaurant search results pages, which receives the highest volume of traffic on the Tripadvisor website. I had to create a solution to expose this information that would scale to tens of millions of requests. That meant querying this data efficiently with cacheing in the right places. As a full stack developer, I also wrote the CSS and HTML to work across every browser (including IE) and setup tracking metrics for feature evaluation.
 
 ![Tripadvisor Logo](/static/tripadvisor1.png)
 
 # Pandemic Microservice
 
-At the start of the pandemic, there were many places where restaurants were closed or they switched take-out only. I rapidly created a microservice in two days to provide this information and the data was populated by research from technical recruiters who could no longer fulfill their normal duties.
+At the start of the pandemic, many restaurants either closed or switched to take-out only. I created and deployed a microservice in two days to provide this status and the data was populated by research from technical recruiters who could no longer fulfill their normal work duties.
 
-The microservice could be queried to determine the state of a restaurant, city, state, country and surfaced this information in the UI. Soon into the pandemic, it became apparent that we would lose a lot of customers. In order to prevent churn, I wrote a script that would calculate every customer's total bill and apply a 100% discount to set their bill to zero. This microservice and discount script was original intended for the Restaurants Business Unit, but it was adopted across the organization.
+The microservice could be queried to determine the state of a restaurant, city, state, or country and surfaced this information in the UI.
+
+Soon into the pandemic, it became apparent that we were losing a lot of customers. In order to prevent churn, I wrote a script that would calculate every customer's total bill and apply a 100% discount to set their bill to zero. This microservice and discount script was original intended for the Restaurants Business Unit, but it was adopted across the whole organization.
 
 # Discount Codes
 
-When I joined TripAdvisor, they had recently migrated to a new billing system. Our microservices would contact the billing service which would create subscriptions for our customers. Often these subscriptions had discounts, but the discounts were prematurely dropping off the accounts. I invested and fixed the creation of discounts so that they lasted the expected amount of time.
+When I joined TripAdvisor, they had recently migrated to a new billing system. Our microservices would contact the billing service to create subscriptions for our customers. Often these subscriptions had discounts, but the discounts were prematurely dropping off the accounts. I invested and fixed the creation of discounts so that they lasted the expected amount of time.
 
 I also implemented a full stack feature that would query for eligible discount codes on the shopping cart page and automatically add discounts if they were eligible.
 
-# Fixed Pricing
+# Pricing overrides
 
-Prices for TripAdvisor restaurant products are adjusted daily to reflect the value that they may offer to the customer. Key Accounts Salespeople needed a way to fix a price for a product so that they could negotiate deals with large customers. I create a mechanism so that salespeople could add locations and fixed prices to. I modified the downstream ETL jobs to ingest this spreadsheet and use the data to set a fixed price instead of the normal calculation.
+Prices for TripAdvisor restaurant products are adjusted daily to reflect the value that they may offer to the customer. Key Accounts Salespeople needed a way to override the price for a product so that they could negotiate deals with large customers. I create a UI and corresponding database storage and I updated the downstream ETL jobs to ingest this new data to set a fixed price instead of the normal calculation.
 
 ### Quotes from Performance Reviews
 

@@ -25,9 +25,3 @@ My day to day responsibilities include being the project lead for web applicatio
 #### Recognition - Premium Parking Award
 
 > "Andrew Herriot is well known among NSP web developers for his significant contribution to the NSP GUI platform. React was chosen for NSP’s modern-looking GUI development based on his initiative. He has been leading the GUI design in NRC-F team as well as contributing to the common components and NSP GUI framework. Andrew is constantly looking for ways to improve the quality of the React GUI components and his commitment to the quality of the GUI framework is recognized by his colleagues."
-
-### Projects
-
-Here is a video highlight some of the projects I was working on.
-
-<iframe width="100%" height="300" src="https://www.youtube.com/embed/7a5_0_u3jIc" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
