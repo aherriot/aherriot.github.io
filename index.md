@@ -9,7 +9,7 @@ Welcome to my portfolio. I am a full stack software developer currently working 
 <div class="tiles">
 {% include preview-tile.html url="/work/surveymonkey" imgSrc="/static/surveymonkey-logo.png" alt="SurveyMonkey" caption="SurveyMonkey" %}
 
-{% include preview-tile.html url="/uvic" imgSrc="/static/uvic.jpg" alt="University of Victoria" caption="Bachelor's Degree in Computer Science from the University of Victoria" %}
+{% include preview-tile.html url="/uvic" imgSrc="/static/uvic.jpg" alt="University of Victoria" caption="BSc in Computer Science" %}
 
 </div>
 

@@ -4,7 +4,7 @@ layout: default
 order: 2
 ---
 
-### 2015 to 2019
+## 2015 to 2019
 
 I worked as a senior web application developer for Nokia where I led the web technology modernization efforts for the IP/Optical Networking department. When I joined Nokia, the company was using an outdated web application framework. It required a web browser to download 10MB of JavaScript just to draw a table. It was slow, time-consuming to develop with, and full of bugs. Over the course of several months, I convinced the organization to change using a series of proof-of-concepts and PowerPoint presentations. Today, we have over 80 developers using the foundation that I put in place.
 

@@ -4,4 +4,4 @@ Visit: http://www.aherriot.com
 
 Portfolio web site for Andrew Herriot
 
-bundle exec jekyll serve
+`bundle exec jekyll serve`

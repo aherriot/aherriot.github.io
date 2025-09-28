@@ -4,7 +4,7 @@ layout: default
 order: 1
 ---
 
-### 2019 to 2020
+## 2019 to 2020
 
 I was a full stack software developer on the Restaurants B2B team creating products for restaurant owners around the globe.
 

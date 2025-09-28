@@ -4,7 +4,7 @@ layout: default
 order: 0
 ---
 
-### 2020 to Present
+## 2020 to Present
 
 I am the Engineering Manager for the Web Experience team. Our mission is to enhance development velocity and ensure consistency across teams by building React-based design system components, improving front-end infrastructure, advocating best practices, and supporting large-scale inter-team projects. Additionally, we develop organization-wide features, such as the site navigation experience.
 

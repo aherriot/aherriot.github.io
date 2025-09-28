@@ -4,7 +4,7 @@ layout: default
 order: 5
 ---
 
-### 2008
+## 2008
 
 As a co-op student, I helped create a carbon emissions offset trading platform. The web-based platform brought carbon emitters and offsetters together in a marketplace for trading carbon credits. The system was in the process of being ported from ColdFusion to PHP RESTful API when I was there. I used tools such as ExtJS and Google Visualizations to create charts and visualizations of emissions data.
 
