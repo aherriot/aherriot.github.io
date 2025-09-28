@@ -4,7 +4,7 @@ permalink: /
 layout: default
 ---
 
-Welcome to my portfolio. I am a full stack software developer currently working for SurveyMonkey in Ottawa, Canada.
+Welcome to my portfolio. I am software engineering manager based out of Ottawa, Canada. I thrive on leading teams to build world-class web applications. With deep technical expertise and strong communication skills, I navigate both development and leadership, collaborating to create superb user experiences.
 
 <div class="tiles">
 {% include preview-tile.html url="/work/surveymonkey" imgSrc="/static/surveymonkey-logo.png" alt="SurveyMonkey" caption="SurveyMonkey" %}
