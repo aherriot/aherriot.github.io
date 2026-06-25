@@ -22,7 +22,7 @@ Welcome to my portfolio. I am software engineering manager based out of Ottawa, 
 
 </div>
 
-Please see more projects in the side bar.
+Please see more projects in the side bar
 
 ### Past Employment
 

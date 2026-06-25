@@ -3,7 +3,7 @@ description: A portfolio of work experience and projects by Andrew Herriot
 author: Andrew Herriot
 
 baseurl:
-url: www.aherriot.com
+url: https://www.aherriot.com
 port: 3000
 
 collections:
