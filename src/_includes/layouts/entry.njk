@@ -1,0 +1,45 @@
+---
+layout: layouts/base.njk
+---
+<section class="entry-hero">
+  <div class="blob entry-blob"></div>
+  <div class="entry-inner">
+    <a class="back-link" href="{% if section == 'work' %}/#experience{% elif section == 'projects' %}/#projects{% else %}/#edu{% endif %}">← Back to {{ section }}</a>
+
+    <div class="entry-eyebrow"><span class="dot"></span>{{ section }}</div>
+    <h1 class="entry-title">{{ title }}</h1>
+
+    {% if dates or role %}
+    <div class="entry-meta">
+      {% if role %}<div class="meta-pill meta-pill-primary">{{ role }}</div>{% endif %}
+      {% if dates %}<div class="meta-pill">{{ dates }}</div>{% endif %}
+    </div>
+    {% endif %}
+
+    {% if stack and stack.length %}
+    <div class="entry-tags">
+      {% for tag in stack %}<span class="tag">{{ tag }}</span>{% endfor %}
+    </div>
+    {% endif %}
+
+    {% if links and links.length %}
+    <div class="entry-links">
+      {% for link in links %}<a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }} ↗</a>{% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+<svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,20 C240,60 480,0 720,24 C960,48 1200,8 1440,32 L1440,60 L0,60 Z"></path></svg>
+
+<section class="entry-content">
+  <div class="entry-body">
+    {{ content | safe }}
+
+    {% if section == 'projects' and links and links.length %}
+    <div class="entry-links entry-links-bottom">
+      {% for link in links %}<a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }} ↗</a>{% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</section>

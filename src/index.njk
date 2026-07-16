@@ -1,0 +1,127 @@
+---
+layout: layouts/base.njk
+description: Andrew Herriot — software engineering manager and senior engineer. Work experience, projects, education, and volunteering.
+---
+{% set currentJob = collections.work | sortByOrder | first %}
+<section class="hero">
+  <div class="blob hero-blob-a"></div>
+  <div class="blob hero-blob-b"></div>
+  <div class="blob hero-blob-c"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="eyebrow"><span class="dot"></span>Hands-on Engineering Leader</div>
+      <h1 class="name">Equally at home writing code <em>or growing the team that does.</em></h1>
+      <p class="hero-thesis">I'm a software engineering manager based out of Ottawa, Canada. I thrive on leading teams to build world-class web applications, navigating both development and leadership to create superb user experiences.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">See selected work</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+      <div class="stat-row">
+        <div class="stat-pill"><b>14+</b><span>Years in industry</span></div>
+        <div class="stat-pill"><b>6</b><span>Companies</span></div>
+        <div class="stat-pill"><b>100+</b><span>Engineers mentored</span></div>
+        <div class="stat-pill"><b>1</b><span>BSc Computer Science</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-blob"></div>
+      <div class="avatar-tag">Currently<b>{{ currentJob.data.role }}</b>@ {{ currentJob.data.title }}</div>
+    </div>
+  </div>
+</section>
+
+<svg class="wave" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,20 C240,60 480,0 720,24 C960,48 1200,8 1440,32 L1440,60 L0,60 Z"></path></svg>
+
+<section class="experience" id="experience">
+  <div class="sec-head reveal">
+    <span class="sec-tag">Experience</span>
+    <span class="sec-title">{{ collections.work.length }} companies, one throughline</span>
+  </div>
+
+  <div class="timeline">
+    <svg class="timeline-svg" preserveAspectRatio="none"><path id="tracePath" d=""/></svg>
+
+    {% for job in collections.work | sortByOrder %}
+    <a class="t-item reveal" href="{{ job.url }}">
+      <div class="t-node"></div>
+      <div class="t-head"><span class="t-company">{{ job.data.title }}</span><span class="t-dates">{{ job.data.dates }}</span></div>
+      {% if job.data.periods and job.data.periods.length %}
+      <div class="t-periods">
+        {% for period in job.data.periods %}
+        <div class="t-period">
+          <div class="t-period-head"><span class="t-role">{{ period.role }}</span><span class="t-dates">{{ period.dates }}</span></div>
+          <p class="t-desc">{{ period.summary }}</p>
+          <div class="t-tags">{% for tag in period.stack %}<span class="tag">{{ tag }}</span>{% endfor %}</div>
+        </div>
+        {% endfor %}
+      </div>
+      {% else %}
+      <div class="t-role">{{ job.data.role }}</div>
+      <p class="t-desc">{{ job.data.summary }}</p>
+      <div class="t-tags">{% for tag in job.data.stack %}<span class="tag">{{ tag }}</span>{% endfor %}</div>
+      {% endif %}
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<svg class="wave flip" viewBox="0 0 1440 60" preserveAspectRatio="none"><path d="M0,32 C240,8 480,52 720,28 C960,4 1200,44 1440,20 L1440,60 L0,60 Z"></path></svg>
+
+<section class="projects" id="projects">
+  <div class="sec-head reveal">
+    <span class="sec-tag">Projects</span>
+    <span class="sec-title">Filter by what you're looking for</span>
+  </div>
+
+  <div class="filter-bar reveal">
+    <span class="filter-label">Filter:</span>
+    <button class="chip active" data-filter="all">All</button>
+    {% for tech in collections.projects | uniqueTechTags %}
+    <button class="chip" data-filter="{{ tech | slugify }}">{{ tech }}</button>
+    {% endfor %}
+  </div>
+
+  <div class="proj-grid reveal">
+    {% for project in collections.projects | sortByOrder %}
+    <a class="card" href="{{ project.url }}" data-tags="{% for tag in project.data.stack %}{{ tag | slugify }} {% endfor %}">
+      <div class="card-num">{{ "0" if loop.index < 10 else "" }}{{ loop.index }}</div>
+      <div class="card-title">{{ project.data.title }}</div>
+      <p class="card-desc">{{ project.data.summary }}</p>
+      <div class="card-tags">{% for tag in project.data.stack %}<span class="tag">{{ tag }}</span>{% endfor %}</div>
+    </a>
+    {% endfor %}
+  </div>
+
+  <div class="show-more-wrap">
+    <button class="btn btn-ghost" id="show-more-btn"></button>
+  </div>
+</section>
+
+<section class="edu" id="edu">
+  <div class="sec-head reveal">
+    <span class="sec-tag">Beyond the job</span>
+    <span class="sec-title">Education &amp; volunteering</span>
+  </div>
+  <div class="edu-grid reveal">
+    <div class="edu-col">
+      <h3>Education</h3>
+      {% for item in collections.education | sortByOrder %}
+      <a class="edu-entry" href="{{ item.url }}">
+        <h4>{{ item.data.role }}</h4>
+        <span>{{ item.data.title }} · {{ item.data.dates }}</span>
+        <p>{{ item.data.summary }}</p>
+      </a>
+      {% endfor %}
+    </div>
+    <div class="edu-col">
+      <h3>Volunteering</h3>
+      {% for item in collections.volunteering | sortByOrder %}
+      <a class="edu-entry" href="{{ item.url }}">
+        <h4>{{ item.data.title }}</h4>
+        <span>{{ item.data.role }}</span>
+        <p>{{ item.data.summary }}</p>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>

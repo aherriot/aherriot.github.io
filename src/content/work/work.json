@@ -1,0 +1,8 @@
+{
+  "tags": ["work"],
+  "layout": "layouts/entry.njk",
+  "section": "work",
+  "eleventyComputed": {
+    "permalink": "/work/{{ page.fileSlug }}/"
+  }
+}

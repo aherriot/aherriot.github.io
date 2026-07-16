@@ -1,0 +1,8 @@
+{
+  "tags": ["volunteering"],
+  "layout": "layouts/entry.njk",
+  "section": "volunteering",
+  "eleventyComputed": {
+    "permalink": "/volunteering/{{ page.fileSlug }}/"
+  }
+}
