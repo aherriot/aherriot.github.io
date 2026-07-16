@@ -1,0 +1,25 @@
+{
+  "name": "aherriot.github.io",
+  "version": "1.0.0",
+  "description": "Visit: http://www.aherriot.com",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aherriot/aherriot.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/aherriot/aherriot.github.io/issues"
+  },
+  "homepage": "https://github.com/aherriot/aherriot.github.io#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "tags": ["education"],
+  "layout": "layouts/entry.njk",
+  "section": "education",
+  "eleventyComputed": {
+    "permalink": "/{{ page.fileSlug }}/"
+  }
+}
