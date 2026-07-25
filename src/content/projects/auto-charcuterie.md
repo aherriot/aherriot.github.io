@@ -3,14 +3,14 @@ title: Auto-Charcuterie
 order: 1.52
 stack: [WebGPU, Physics, Next.js, TypeScript]
 links:
-  - label: autocharcuterie.vercel.app
-    url: https://autocharcuterie.vercel.app
+  - label: auto-charcuterie.vercel.app
+    url: https://auto-charcuterie.vercel.app
   - label: github.com/aherriot/auto-charcuterie
     url: https://github.com/aherriot/auto-charcuterie
 summary: A 3D charcuterie board builder where physics decides where your food lands and two opinionated judges score the result — hand-written WebGPU renderer, no models, no textures, no rendering library.
 ---
 
-[Play it →](https://autocharcuterie.vercel.app) (requires a [WebGPU-capable browser](https://caniuse.com/webgpu) — recent Chrome/Edge, Safari 18+, or Firefox with WebGPU enabled)
+[Play it →](https://auto-charcuterie.vercel.app) (requires a [WebGPU-capable browser](https://caniuse.com/webgpu) — recent Chrome/Edge, Safari 18+, or Firefox with WebGPU enabled)
 
 Build a charcuterie board in 3D: click an item, click a spot above the board, and drop it. Physics decides where it actually lands. Two judges heckle you throughout, then score you out of 100 and hand you the bill.
 
